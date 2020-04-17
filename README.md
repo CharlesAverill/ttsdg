@@ -33,5 +33,5 @@ from, relies on what system voices you have installed.
 - `set_engine(engine)` - Only mess around with this if you know what you're doing. Sets the pyttsx3 Engine object,
 useful for importing settings if your project already has an engine.
 - `get_engine()` - Gets the pyttsx3 engine object.
-- `generate(text, samples, out_format)` - Generates `n` samples of the input `text`, saves them to 
+- `generate(text, n, out_format)` - Generates `n` samples of the input `text`, saves them to 
 `./(text)/(text)_index.(out_format)`

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ttsdg
-Version: 1.0.0
+Version: 1.0.1
 Summary: A package to automate TTS data generation
 Home-page: https://github.com/CharlesAverill/ttsdg
 Author: Charles Averill
@@ -41,7 +41,7 @@ Description: # TTSDG
         - `set_engine(engine)` - Only mess around with this if you know what you're doing. Sets the pyttsx3 Engine object,
         useful for importing settings if your project already has an engine.
         - `get_engine()` - Gets the pyttsx3 engine object.
-        - `generate(text, samples, out_format)` - Generates `n` samples of the input `text`, saves them to 
+        - `generate(text, n, out_format)` - Generates `n` samples of the input `text`, saves them to 
         `./(text)/(text)_index.(out_format)`
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3

@@ -3,6 +3,8 @@ README.md
 requirements.txt
 setup.py
 ./ttsdg/__init__.py
+dist/ttsdg-1.0.0-py3-none-any.whl
+dist/ttsdg-1.0.0.tar.gz
 ttsdg/__init__.py
 ttsdg/ttsdg.py
 ttsdg.egg-info/PKG-INFO
