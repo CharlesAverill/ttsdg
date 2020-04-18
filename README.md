@@ -2,7 +2,7 @@
 TTSDG, or Text-To-Speech Data Generator, automates the simple-but-frustrating task of generating large amounts of TTS
 data for tasks like machine learning. TTSDG contains an easy-to-use class that can generate text offline, in large 
 batches, and with control over the system voices that you have installed. TTSDG randomizes volume, speed, and voice of 
-each sample if desired.
+each sample, and prevents duplicates from happening.
 
 TTSDG utilizes [pyttsx3](https://pypi.org/project/pyttsx3/) and [pydub](https://pypi.org/project/pydub/) to generate the
 audio and convert it into multiple formats. All pydub-supported formats are supported in TTSDG, like WAV, MP3, and AIFF.
