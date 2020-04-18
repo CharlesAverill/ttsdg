@@ -16,12 +16,19 @@ TTSDG is available through pip:
 ```python
 from ttsdg import TTSDG
 
-gen = TTSDG(verbose=True)
+for word in ["Apple", "Orange", "Banana"]:
+    print(word)
 
-gen.volume_range = [.5, 1.0]
-gen.wpm_range = [200, 400]
-
-gen.generate("Hello World!", 100, out_format="wav")
+    gen = TTSDG(verbose=True)
+    gen.volume_range = [.5, 1.0]
+    gen.wpm_range = [200, 400]
+    
+    gen.generate("Hello World!", 100, out_format="wav")
+    
+    # A bug in pyttsx3 will cause hangs on generation
+    # in loops sometimes. del the generator at the end 
+    # of the loop to solve this
+    del gen
 ```
 
 # Methods

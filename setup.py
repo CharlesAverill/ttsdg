@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ttsdg",
-    version="1.1.0",
+    version="1.1.1",
     scripts=['./ttsdg/__init__.py'],
     author="Charles Averill",
     author_email="charlesaverill20@gmail.com",
