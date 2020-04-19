@@ -116,6 +116,12 @@ class TTSDG:
         :param n: The number of sound files to generate
         :param out_format: The audio format the sound files will be converted to
         """
+        # Handle OS filename stuff
+        if "." in text:
+            text.replace(".", "")
+        if "'" in text:
+            text.replace("'", "")
+
         # files - list of file names for mp3 -> out_format conversion
         # prev - list of previously used voice, volume, and wpm combos so duplicates don't happen
         files = []
@@ -159,5 +165,5 @@ class TTSDG:
         for file in files:
             # Default pyttsx3 output is mp3, so if that's what the user wants, don't convert it
             if out_format is not "mp3":
-                AudioSegment.from_file(file).export(file[:-4] + ".wav", format=out_format)
+                AudioSegment.from_file(file).export(file[:-4].replace(" ", "_") + ".wav", format=out_format)
                 os.remove(file)
