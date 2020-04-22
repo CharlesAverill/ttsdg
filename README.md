@@ -21,9 +21,9 @@ for word in ["Apple", "Orange", "Banana"]:
 
     gen = TTSDG(verbose=True)
     gen.volume_range = [.5, 1.0]
-    gen.wpm_range = [200, 400]
+    gen.wpm_range = [200, 300]
     
-    gen.generate("Hello World!", 100, out_format="wav")
+    gen.generate(word, 100, out_format="wav")
     
     # A bug in pyttsx3 will cause hangs on generation
     # in loops sometimes. del the generator at the end 

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ttsdg
-Version: 1.1.2
+Version: 1.1.3
 Summary: A package to automate TTS data generation
 Home-page: https://github.com/CharlesAverill/ttsdg
 Author: Charles Averill
@@ -29,9 +29,9 @@ Description: # TTSDG
         
             gen = TTSDG(verbose=True)
             gen.volume_range = [.5, 1.0]
-            gen.wpm_range = [200, 400]
+            gen.wpm_range = [200, 300]
             
-            gen.generate("Hello World!", 100, out_format="wav")
+            gen.generate(word, 100, out_format="wav")
             
             # A bug in pyttsx3 will cause hangs on generation
             # in loops sometimes. del the generator at the end 
